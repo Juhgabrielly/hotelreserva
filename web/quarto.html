@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Quarto</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="fa-solid fa-hotel"></i>
+        <div>
+            <h3>Hotel</h3>
+            <span>Reservas</span>
+      </div>
+    </div>
+    <nav>
+        <a href="../index.html">
+        <i class="fa-solid fa-bed"></i> Quartos
+      </a>
+      <a href="reservas.html">
+        <i class="fa-solid fa-calendar-days"></i>
+        Reservas
+      </a>
+    </nav>
+  </aside>
+  <main>
+    <div class="header-page">
+      <div>
+        <h2>Cadastro de Quarto</h2>
+        <p>Adicione um novo quarto ao sistema</p>
+      </div>
+    </div>
+    <div class="form-card">
+      <form id="formQuarto">
+        <div class="form-group">
+          <label>Número do Quarto</label>
+          <input type="text" id="numero" placeholder="Ex: 101" required>
+        </div>
+        <div class="form-group">
+          <label>Tipo do Quarto</label>
+          <select id="tipo" required>
+            <option value=""> Selecione o tipo</option>
+            <option value="Standard">Standard</option>
+            <option value="Luxo"> Luxo</option>
+            <option value="Suíte"> Suíte</option>
+         </select>
+        </div>
+        <div class="form-buttons">
+          <button type="submit" class="btn-primary">
+            <i class="fa-solid fa-floppy-disk"></i>Cadastrar
+          </button>
+          <a href="../index.html" class="btn-secondary">
+            <i class="fa-solid fa-arrow-left"></i>
+            Voltar
+          </a>
+        </div>
+      </form>
+    </div>
+    <footer>
+      © 2024 Hotel Reservas - Projeto Full Stack
+    </footer>
+  </main>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

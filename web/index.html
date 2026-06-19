@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Reservas</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">
+      <span class="logo-icon">🏨</span>
+      <div>
+        <h3>Hotel</h3>
+        <h3>Reservas</h3>
+      </div>
+    </div>
+    <nav class="menu">
+      <a href="index.html" class="active">
+        🛏️ Quartos
+      </a>
+      <a href="#">📅 Reservas</a>
+      <a href="#">ℹ️ Sobre</a>
+    </nav>
+  </aside>
+  <main class="content">
+    <div class="card">
+      <div class="topo">
+        <div>
+          <h1>Quartos Cadastrados</h1>
+          <p>Gerencie os quartos do hotel</p>
+        </div>
+        <a href="cadastro-quarto.html" class="btn-azul">
+          + Novo Quarto
+        </a>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Nº Quarto</th>
+            <th>Tipo</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="listaQuartos">
+        </tbody>
+      </table>
+    </div>
+    <footer>
+      © 2026 Hotel Reservas - Projeto Full Stack
+    </footer>
+  </main>
+ <div class="overlay" id="overlay">
+    <div class="modal">
+      <div class="icone-alerta">!</div>
+      <h2>Excluir Quarto</h2>
+      <p>Deseja realmente excluir este quarto?</p>
+      <div class="botoes-modal">
+        <button class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
+        <button class="btn-excluir" id="btnConfirmarExcluir">Excluir</button>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

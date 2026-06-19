@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas do Quarto</title>
+    <link rel="stylesheet" href="./reservas.css">
+</head>
+<body>
+<div class="container">
+    <aside class="sidebar">
+        <div class="logo">
+            <i class="fa-solid fa-hotel"></i>
+            <div>
+                <h3>Hotel</h3>
+                <span>Reservas</span>
+            </div>
+        </div>
+        <nav>
+            <a href="./index.html" class="active">
+                <i class="fa-solid fa-bed"></i>
+                Quartos
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-calendar-days"></i>
+                Reservas
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-circle-info"></i>
+                Sobre
+            </a>
+        </nav>
+    </aside>
+    <main>
+        <div class="topo">
+            <div>
+                <h2 id="tituloQuarto">Reservas do Quarto</h2>
+                <p id="tipoQuarto">Tipo:</p>
+            </div>
+            <a id="btnNovaReserva" class="btn-primary" href="./cadastroreser.html">
+                <i class="fa-solid fa-plus"></i>
+                Nova Reserva
+            </a>
+        </div>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Hóspede</th>
+                        <th>Entrada</th>
+                        <th>Saída</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="listaReservas">
+                    <tr>
+                        <td colspan="5">Carregando reservas...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="area-voltar">
+            <a href="./index.html" class="btn-secondary">
+                <i class="fa-solid fa-arrow-left"></i>
+                Voltar
+            </a>
+        </div>
+        <footer> © 2024 Hotel Reservas - Projeto Full Stack
+        </footer>
+    </main>
+</div>
+<div class="modal" id="modalExcluirReserva">
+    <div class="modal-content">
+        <h3>Excluir Reserva</h3>
+        <p>Deseja realmente excluir esta reserva?</p>
+        <div class="modal-buttons">
+            <button class="btn-cancel" onclick="fecharModalExcluirReserva()">
+                Cancelar
+            </button>
+            <button id="confirmarExclusaoReserva" class="btn-delete">
+                Excluir
+            </button>
+        </div>
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

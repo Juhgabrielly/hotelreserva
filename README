@@ -1,0 +1,38 @@
+# Sistema Hotel Reservas
+
+## Tecnologias
+
+- Node.js
+- Express
+- JavaScript
+- Prisma
+- MySQL
+
+## Como executar
+
+### Banco
+
+1. Criar banco hotel_db
+
+### API
+
+cd api
+
+npm install
+
+npx prisma generate
+
+npm run dev
+
+## Funcionalidades
+
+- Cadastro de quartos
+- Listagem de quartos
+- Exclusão de quartos
+- Cadastro de reservas
+- Listagem de reservas
+- Exclusão de reservas
+
+## Insomnia
+
+- Retirar os listar, cadastrar, buscar, excluir e atualizar nas urls do insomnia para funcionar. E ignorar o listar reserva por quarto!
